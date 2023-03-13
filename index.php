@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Site PHP</title>
 </head>
-<body>
 
+<?php
+include 'partials/header.php';
+?>
 
 <body class="text-center">
     <form class="form-signin">
-      <!-- <img class="mb-4" src="assets/" alt="" width="72" height="72"> -->
-      <h1 class="h3 mb-3 font-weight-normal">Connectez-vous</h1>
-      <label for="inputEmail" class="sr-only">Adresse Email</label>
+      <img class="mb-4" src="assets/img/OIP.jpg" alt="PHP Logo" width="158" height="83">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-      <label for="inputPassword" class="sr-only">Mot de passe</label>
+      <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
       <div class="checkbox mb-3">
         <label>
-          <input type="checkbox" value="remember-me"> Se souvenir de moi</label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
-      <p class="mt-5 mb-3 text-muted">© 2023-2024</p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">©Cyril-Hequet</p>
     </form>
-
+  
 <?php
-
+include 'partials/footer.php';
 ?>
     
 </body>
